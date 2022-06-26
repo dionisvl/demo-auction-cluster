@@ -8,6 +8,7 @@ all:
                     ansible_host: 0.0.0.0
                     ansible_port: 22
             vars:
+                # тут надо выполнить команду docker node ls на менеджере, там убедиться что Нода типа worker подключена, взять её hostname и добавить сюда.
                 db_hostname: worker-db
         workers:
             hosts:
